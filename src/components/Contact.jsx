@@ -6,7 +6,7 @@ const ContactInfo = ({ icon, label, value, href }) => (
     <motion.a
         href={href}
         whileHover={{ x: 5 }}
-        className="flex items-center gap-4 p-4 pl-20 hover: transition-all group"
+        className="flex items-center gap-4 p-4 pl-10 glass rounded-2xl border border-slate-800 hover:border-primary/40 transition-all group"
     >
         <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all">
             {icon}
