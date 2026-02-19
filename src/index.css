@@ -6,8 +6,13 @@
   color-scheme: dark;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
-  @apply bg-dark text-white overflow-x-hidden;
+  @apply bg-dark text-white overflow-x-hidden w-full;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
