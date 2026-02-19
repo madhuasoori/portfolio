@@ -4,9 +4,10 @@ import { Award, CheckCircle2, Star } from 'lucide-react';
 
 const CertificationCard = ({ title, issuer, file, index }) => {
     const isExternal = file.startsWith('http');
+    const baseUrl = import.meta.env.BASE_URL;
     return (
         <motion.a
-            href={isExternal ? file : `/${file}`}
+            href={isExternal ? file : `${baseUrl}${file}`}
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}

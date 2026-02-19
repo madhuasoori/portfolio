@@ -23,7 +23,7 @@ const Hero = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative aspect-[3/4] w-64 md:w-80 overflow-hidden rounded-2xl border border-white/10 glass">
                                 <img
-                                    src="/profile.jpeg"
+                                    src={`${import.meta.env.BASE_URL}profile.jpeg`}
                                     alt="Madhulika Asoori"
                                     className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
                                     onError={(e) => {
@@ -66,7 +66,7 @@ const Hero = () => {
 
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 mb-12">
                             <motion.a
-                                href="/Madhulika Asoori Resume.pdf"
+                                href={`${import.meta.env.BASE_URL}Madhulika Asoori Resume.pdf`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold shadow-lg hover:shadow-primary/30 transition-shadow flex items-center gap-2"
