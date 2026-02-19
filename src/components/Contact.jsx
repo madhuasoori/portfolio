@@ -6,7 +6,7 @@ const ContactInfo = ({ icon, label, value, href }) => (
     <motion.a
         href={href}
         whileHover={{ x: 5 }}
-        className="flex items-center gap-4 p-4 pl-10 glass rounded-2xl border border-slate-800 hover:border-primary/40 transition-all group"
+        className="flex items-center gap-4 p-4 px-4 sm:pl-10 glass rounded-2xl border border-slate-800 hover:border-primary/40 transition-all group"
     >
         <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all">
             {icon}
@@ -81,7 +81,7 @@ const Contact = () => {
                         transition={{ duration: 0.8 }}
                         className="space-y-6"
                     >
-                        <h3 className="text-2xl font-bold pl-10 text-white mb-8">Contact Information</h3>
+                        <h3 className="text-2xl font-bold pl-4 sm:pl-10 text-white mb-8">Contact Information</h3>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
                             <ContactInfo

@@ -45,7 +45,7 @@ const Hero = () => {
                             Hi, I'm Madhulika Asoori
                         </h2>
 
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 min-h-[1.2em]">
+                        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-6 min-h-[1.2em]">
                             <Typewriter
                                 options={{
                                     strings: [
